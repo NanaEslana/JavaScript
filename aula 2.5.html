@@ -11,32 +11,24 @@
     <h1>Logica de programacao</h1>
 
     <script>
-        var n1 = prompt("Jogador 1 : Digite um numero!");
+        var n1 = prompt("Digite um numero!");
         n1 = parseFloat (n1);
-        var n2 = prompt("Jogador 2 : Digite um numero!");
+        var n2 = prompt("Digite um numero!");
         n2 = parseFloat(n2);
+
+        var media = (n1 + n2)/2 
         
-        if (n1 === n2){   
-            alert("VocÊs empataram")
+        if(media > 5 && n1 > 0 && n2 > 0){
+            alert("Parabéns, vocÊ foi APROVADO")
         } else{
-            var soteador = parseInt(Math.random()*2);
-
-            if (soteador === 0){ 
-                
-               if (n1 < n2) {
-                 alert("Jogador 1 GANHOU")
-
-               }else{
-                 alert("Jogador 2 GANHOU") }
+            alert("Desculpa, você foi REPROVADO")
+        }
           
-          } else {
-                if (n1 > n2){
-                  alert("Jogador 1 GANHOU")  
-                } else {
-                    alert("Jogador 2 GANHOU")
-                }
-            }
-        } 
+    
+                 
+                
+            
+        
     </script>
 </body>
 </html>
